@@ -1,22 +1,22 @@
 "use strict";
 class Vehicle {
-    constructor(make, model, year, rented = false) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.rented = rented;
+    constructor(_make, _model, _year, _rented = false) {
+        this._make = _make;
+        this._model = _model;
+        this._year = _year;
+        this._rented = _rented;
     }
-    getMake() {
-        return this.make;
+    get make() {
+        return this._make;
     }
-    getModel() {
-        return this.model;
+    get model() {
+        return this._model;
     }
-    getYear() {
-        return this.year;
+    get year() {
+        return this._year;
     }
-    isRented() {
-        return this.rented;
+    get rented() {
+        return this._rented;
     }
 }
 //# sourceMappingURL=app.js.map

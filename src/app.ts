@@ -1,24 +1,24 @@
 abstract class Vehicle {
     constructor(
-        private make: string,
-        private model: string,
-        private year: number,
-        private rented: boolean = false
+        private _make: string,
+        private _model: string,
+        private _year: number,
+        private _rented: boolean = false
         ) {}
 
-        public getMake(): string{
-            return this.make;
+        get make(): string{
+            return this._make;
         }
 
-        public getModel(): string{
-            return this.model;
+        get model(): string{
+            return this._model;
         }
         
-        public getYear(): number{
-            return this.year;
+        get year(): number{
+            return this._year;
         }
 
-        public isRented(): boolean{
-            return this.rented;
+        get rented(): boolean{
+            return this._rented;
         }
 }
