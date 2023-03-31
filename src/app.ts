@@ -125,7 +125,7 @@ truck.return(); // "Thank you for returning the Toyota Camry."
 console.log("motorcycle rent")
 
 const motorcycle = new MotorCycle('Sultan', 'Yamaha', 2023, 2000);
-console.log(`The ${motorcycle.make} ${motorcycle.model} has a ${motorcycle.getEngineSize()}cc engine.`);
+console.log(`The rental rate for the ${motorcycle.getEngineSize()}cc ${motorcycle.make} ${motorcycle.model} is $${motorcycle.rentalRate()} per day .`);
 motorcycle.rent(); // "You have rented the Sultan Yamaha."
 motorcycle.rent(); // "Sorry, the Sultan Yamaha is already rented."
 motorcycle.return(); // "Thank you for returning the Sultan Yamaha."
